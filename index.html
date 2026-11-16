@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 3 - Formulario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+        <h1>Registro de la persona Usuaria</h1>
+
+        <form action="#" method="post" class="formulario-registro">
+            
+            <div class="grupo-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Teodora" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej. Villavicencio" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="usuario@correo.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" minlength="8" placeholder="Mínimo 8 caracteres" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="descripcion">Breve descripción sobre ti:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" placeholder="Háblame de ti" required></textarea>
+            </div>
+
+             <fieldset class="grupo-opciones">
+                <legend>Intereses:</legend>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="cine-series" name="intereses" value="cine-series">
+                    <label for="cine-series">Cine y series</label>
+                </div>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="musica" name="intereses" value="musica">
+                    <label for="musica">Música</label>
+                </div>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="lectura" name="intereses" value="lectura">
+                    <label for="lectura">Lectura</label>
+                </div>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="arte" name="intereses" value="arte">
+                    <label for="arte">Arte</label>
+                </div>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="naturaleza" name="intereses" value="naturaleza">
+                    <label for="naturaleza">Naturaleza</label>
+                </div>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="videojuegos" name="intereses" value="videojuegos">
+                    <label for="videojuegos">Videojuegos</label>
+                </div>
+
+                <div class="opcion-check">
+                    <input type="checkbox" id="tecnologia-ciencia" name="intereses" value="tecnologia-ciencia">
+                    <label for="tecnologia-ciencia">Tecnología y ciencia</label>
+                </div>
+
+            </fieldset>
+
+            <div class="grupo-boton">
+                <button type="submit" class="boton-enviar">Registrarse</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
